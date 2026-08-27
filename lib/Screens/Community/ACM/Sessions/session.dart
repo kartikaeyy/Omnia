@@ -5,7 +5,7 @@ import 'package:omnia/Screens/Community/ACM/Sessions/session_desc.dart';
 import 'package:omnia/cardvalues.dart';
 
 class Session extends StatefulWidget {
-  const Session({Key? key}) : super(key: key);
+  const Session({super.key});
 
   @override
   State<Session> createState() => _SessionState();
@@ -108,7 +108,7 @@ class _SessionState extends State<Session> {
                                         filter: ImageFilter.blur(
                                             sigmaX: 4.0, sigmaY: 4.0),
                                         child: Container(
-                                          color: Colors.black.withOpacity(0.3),
+                                          color: Colors.black.withValues(alpha: 0.3),
                                           width: double.infinity,
                                           height: double.infinity,
                                         ),

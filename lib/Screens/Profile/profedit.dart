@@ -293,7 +293,7 @@ class _EditProfileState extends State<EditProfile> {
           borderRadius: BorderRadius.circular(10),
         ),
         filled: true,
-        fillColor: Colors.white.withOpacity(0.1),
+        fillColor: Colors.white.withValues(alpha: 0.1),
         enabledBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.white),
           borderRadius: BorderRadius.circular(10),

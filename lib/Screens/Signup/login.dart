@@ -92,7 +92,7 @@ class _LoginState extends State<Login> {
           fit: BoxFit.cover,
         )),
         child: Container(
-          color: Colors.black.withOpacity(0.5),
+          color: Colors.black.withValues(alpha: 0.5),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

@@ -6,7 +6,7 @@ import 'package:omnia/Screens/Community/ACM/acm_descrption.dart';
 import 'package:omnia/cardvalues.dart';
 
 class ACM extends StatefulWidget {
-  const ACM({Key? key}) : super(key: key);
+  const ACM({super.key});
 
   @override
   State<ACM> createState() => _ACMState();
@@ -127,7 +127,7 @@ class _ACMState extends State<ACM> {
                               child: BackdropFilter(
                                 filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
                                 child: Container(
-                                  color: Colors.black.withOpacity(0.3), // Adjust the opacity as needed
+                                  color: Colors.black.withValues(alpha: 0.3), // Adjust the opacity as needed
                                   width: double.infinity,
                                   height: double.infinity,
                                 ),
