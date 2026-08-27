@@ -11,13 +11,13 @@ class SessionDetailsPage extends StatefulWidget {
   final List<String> gallery;
 
   const SessionDetailsPage({
-    Key? key,
+    super.key,
     required this.sessionDescription,
     required this.sessionHeadings,
     required this.sessionSubheadings,
     required this.sessionPoster,
     required this.gallery,
-  }) : super(key: key);
+  });
 
   @override
   State<SessionDetailsPage> createState() => _SessionDetailsPageState();
@@ -153,7 +153,7 @@ class _SessionDetailsPageState extends State<SessionDetailsPage> {
                                 bottom: 10,
                                 child: DotsIndicator(
                                   dotsCount: widget.gallery.length,
-                                  position: _currentPage,
+                                  position: _currentPage.toDouble(),
                                   decorator: DotsDecorator(
                                     color: Colors.grey,
                                     activeColor: Colors.blue,

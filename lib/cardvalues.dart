@@ -240,7 +240,7 @@ List<String> acmImages = [
 //...........EVENTS GSHEETS...........//
 
 
-const _credentials = r''' 
+const credentials = r'''
 {
   "type": "service_account",
   "project_id": "acm-events-432208",
@@ -256,4 +256,4 @@ const _credentials = r'''
 }
 ''';
 
-const _spreadsheetId = '19Of0siGvy4yAKLrtxemmEmNpww2Dkxo5DC_gVrFOhEc';
+const spreadsheetId = '19Of0siGvy4yAKLrtxemmEmNpww2Dkxo5DC_gVrFOhEc';

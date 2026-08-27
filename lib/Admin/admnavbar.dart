@@ -9,7 +9,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:omnia/Screens/Signup/auth.dart';
 
 class AdminNav extends StatefulWidget {
-  const AdminNav({Key? key}) : super(key: key);
+  const AdminNav({super.key});
 
   @override
   State<AdminNav> createState() => _AdminNavState();

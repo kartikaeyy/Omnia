@@ -53,7 +53,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           child: Container(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

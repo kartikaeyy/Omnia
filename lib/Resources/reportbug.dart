@@ -160,7 +160,7 @@ class _ReportBugState extends State<ReportBug> {
           borderRadius: BorderRadius.circular(10),
         ),
         filled: true,
-        fillColor: Colors.white.withOpacity(0.1),
+        fillColor: Colors.white.withValues(alpha: 0.1),
         disabledBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: navColor),
           borderRadius: BorderRadius.circular(10),

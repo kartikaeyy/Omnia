@@ -11,13 +11,13 @@ class DetailsPage extends StatefulWidget {
   final List<String> eventsgallery;
 
   const DetailsPage({
-    Key? key,
+    super.key,
     required this.heading,
     required this.subheading,
     required this.imageUrl,
     required this.eventsDescription,
     required this.eventsgallery,
-  }) : super(key: key);
+  });
 
   @override
   State<DetailsPage> createState() => _DetailsPageState();
@@ -153,7 +153,7 @@ class _DetailsPageState extends State<DetailsPage> {
                                 bottom: 10,
                                 child: DotsIndicator(
                                   dotsCount: widget.eventsgallery.length,
-                                  position: _currentPage,
+                                  position: _currentPage.toDouble(),
                                   decorator: DotsDecorator(
                                     color: Colors.grey,
                                     activeColor: Colors.blue,

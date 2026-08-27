@@ -8,7 +8,7 @@ import 'package:omnia/Resources/elegantnotif.dart';
 class PaymentUploadCard extends StatefulWidget {
   final Function(String?) onUploadComplete; // Callback to pass the URL
 
-  const PaymentUploadCard({Key? key, required this.onUploadComplete}) : super(key: key);
+  const PaymentUploadCard({super.key, required this.onUploadComplete});
 
   @override
   PaymentUploadCardState createState() => PaymentUploadCardState();
@@ -86,7 +86,7 @@ class PaymentUploadCardState extends State<PaymentUploadCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white.withOpacity(0.1),
+      color: Colors.white.withValues(alpha: 0.1),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),

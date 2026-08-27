@@ -11,11 +11,11 @@ class ACMDetailsPage extends StatefulWidget {
   final String tenureDescription;
 
   const ACMDetailsPage({
-    Key? key,
+    super.key,
     required this.tenureDescription,
     required this.heading,
     required this.imageUrl,
-  }) : super(key: key);
+  });
 
   @override
   State<ACMDetailsPage> createState() => _ACMDetailsPageState();
@@ -115,7 +115,7 @@ class _ACMDetailsPageState extends State<ACMDetailsPage> {
                                           child: BackdropFilter(
                                             filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
                                             child: Container(
-                                              color: Colors.black.withOpacity(0.3),
+                                              color: Colors.black.withValues(alpha: 0.3),
                                               width: double.infinity,
                                               height: double.infinity,
                                             ),
@@ -199,7 +199,7 @@ class _ACMDetailsPageState extends State<ACMDetailsPage> {
                                           child: BackdropFilter(
                                             filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
                                             child: Container(
-                                              color: Colors.black.withOpacity(0.3),
+                                              color: Colors.black.withValues(alpha: 0.3),
                                               width: double.infinity,
                                               height: double.infinity,
                                             ),
